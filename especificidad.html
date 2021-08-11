@@ -1,0 +1,62 @@
+html><!DOCTYPE
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ESPECIFIDAD
+    TAGNAME  1
+    CLASE  10
+ID  100
+ESTILOS EN LINEA   100
+*/
+/*#header{
+    background-color: slateblue;
+}*/
+.header{
+    background-color: skyblue;
+}
+h1 {
+    background-color: seagreen;
+}
+.test{
+    color:snow;
+}
+h1 .test{
+    color: red;
+}
+.header span.test{
+    background-color: crimson;
+}
+/* selector con operadores
+
+*hijo directo ">"
+*hermano siguiente "+"
+*hermanos sigientes "eñe"
+
+*/
+
+section  span { 
+    background-color: blue ;
+}
+p + div{
+    color: coral
+}
+    </style>
+</head>
+<body>
+   <h1 class= "header" id="header">hola mama<span >que hace</span></h1> 
+   <h1 class= "header" id="header">hola mama<span class="test" style="color: blueviolet;">que hace</span></h1> 
+   <section>
+       <p>hola1 <span>quetal</span></p>
+       <p>hola2 <span>quetal</span></p>
+       <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, tempora?</div>
+       <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, magnam?</div>
+       <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, est!</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, illum.</p>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, vitae.</div>
+    </section>
+</body> 
+</html>
